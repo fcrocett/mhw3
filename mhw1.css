@@ -1,0 +1,148 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+a {
+    font-size: 20px;
+    background-color:rgb(94, 80, 63);
+    color: aliceblue;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+a:hover {
+    background-color: rgb(39, 34, 26);
+    color: white;
+  }
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgb(198, 172, 143);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    height: 60px;
+}
+
+header {
+    background-image: url(https://compass-media.vogue.it/photos/63c5ee42e2007a96e6ea6c7e/16:9/w_2560%2Cc_limit/Oscar%25202023%2520);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 300px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -2;
+}
+
+@media (max-width: 500px) {
+header {
+    height: 250px;
+}
+
+a {
+    padding: 2px 5px;
+}
+}
+
+header h1 {
+    font-size: 40px;
+    font-family: 'Quicksand', sans-serif;
+    width:750px;
+    text-align: center;
+    color:aliceblue;
+    z-index: 0;
+}
+
+#overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+}
+
+#profile {
+    margin-top: -50px;
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    z-index: 1;
+}
+
+#nomeutente{
+    font-size: 15px;
+    color: rgba(22, 22, 22, 0.596);
+    line-height:1.5em;
+    margin-bottom: 10px;
+}
+
+#nomeutente em{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+footer {
+    background-color: rgb(37, 9, 2);
+    color: lightgray;
+    padding: 20px;
+    font-size: 20px; 
+    font-weight:700;
+}
+
+article{
+    display: flex;
+    flex-direction: row;
+}
+
+section{
+    display:flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 60px;
+}
+
+.index{
+    text-align: right;
+    color: darkslategray;
+    margin-right: 40px;
+    font-size: 35px;
+}
+
+.content{
+    width: 70%;
+    text-align: left;
+}
+
+.content h1 {
+    margin: 0px;
+    font-size: 35px;
+}
+
+.voto{
+    margin-bottom: 20px;
+    color:crimson;
+    font-size: 15px;
+    font-style:oblique;
+}
+
+.content p{
+    font-size: 15px;
+    margin: 20px 0px;
+    
+}
+
+.content img{
+    height:100%;
+    width:100%;
+    margin-bottom: 60px;
+}
